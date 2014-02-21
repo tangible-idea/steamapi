@@ -1,0 +1,13 @@
+H:\0.MyProject\SteamWebAPI\SyncSteam\SyncSteam\bin\Release\SyncSteam.exe
+H:\0.MyProject\SteamWebAPI\SyncSteam\SyncSteam\bin\Release\SyncSteam.pdb
+H:\0.MyProject\SteamWebAPI\SyncSteam\SyncSteam\bin\Release\protobuf-net.dll
+H:\0.MyProject\SteamWebAPI\SyncSteam\SyncSteam\bin\Release\SteamKit2.dll
+H:\0.MyProject\SteamWebAPI\SyncSteam\SyncSteam\bin\Release\protobuf-net.pdb
+H:\0.MyProject\SteamWebAPI\SyncSteam\SyncSteam\bin\Release\protobuf-net.xml
+H:\0.MyProject\SteamWebAPI\SyncSteam\SyncSteam\bin\Release\SteamKit2.xml
+H:\0.MyProject\SteamWebAPI\SyncSteam\SyncSteam\obj\x86\Release\SyncSteam.frmMain.resources
+H:\0.MyProject\SteamWebAPI\SyncSteam\SyncSteam\obj\x86\Release\SyncSteam.frmInfo.resources
+H:\0.MyProject\SteamWebAPI\SyncSteam\SyncSteam\obj\x86\Release\SyncSteam.Properties.Resources.resources
+H:\0.MyProject\SteamWebAPI\SyncSteam\SyncSteam\obj\x86\Release\SyncSteam.csproj.GenerateResource.Cache
+H:\0.MyProject\SteamWebAPI\SyncSteam\SyncSteam\obj\x86\Release\SyncSteam.exe
+H:\0.MyProject\SteamWebAPI\SyncSteam\SyncSteam\obj\x86\Release\SyncSteam.pdb

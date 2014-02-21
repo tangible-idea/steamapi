@@ -1,0 +1,17 @@
+# pack-refs with: peeled fully-peeled 
+5238a265c14cc88bea79fbe6e4f1a985e52bf033 refs/remotes/origin/master
+2e83bfd6c3a11a3ca134c070fbe7c4c0642eceb0 refs/remotes/origin/steamclient-beta
+27893a76647026c780f51ae18a4f3628a279a115 refs/tags/SteamKit_1.0.0
+6aaf5d2f6d25c6c1e84c4f10b079c26d8992307e refs/tags/SteamKit_1.1.0
+67398e4c682bf65b0330f16d1cb1a553ae8accc6 refs/tags/SteamKit_1.2.0
+6efcc728941acf1dd5d84c893c794ea18ef34095 refs/tags/SteamKit_1.2.1
+e357e208cb96b72301375e6924e2a7fec7e59831 refs/tags/SteamKit_1.2.2
+6fc9fe73bfb6fda523837b48b92d4bc729607f42 refs/tags/SteamKit_1.3
+51b76e709e20966640f7f22c47074f4aea1900f9 refs/tags/SteamKit_1.3.1
+8048f236beaf1ead11537efc164ba18de48541fe refs/tags/SteamKit_1.4.0
+9b772c8ca59a08ea57812548af8ba1fc07b6fe69 refs/tags/SteamKit_1.4.1
+^9283962c4510284908bf4816c5cf76d4e3d43931
+a6b5ed56c553e6d6caab37c189d6977e1736eed5 refs/tags/SteamKit_1.5.0
+^f7427715e34649692a997e7de64f4e846d78421b
+e0360faf9d588a88220bb94c926b0b8c03b9c7f6 refs/tags/Vapor_1.5
+ec8c576b4748f0c0c1286310fc4a71ea8f89013b refs/tags/Vapor_1.6

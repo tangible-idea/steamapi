@@ -1,0 +1,16 @@
+H:\0.MyProject\SteamKit\Samples\5.Friends\bin\Debug\3rd party.txt
+H:\0.MyProject\SteamKit\Samples\5.Friends\bin\Debug\changes.txt
+H:\0.MyProject\SteamKit\Samples\5.Friends\bin\Debug\gpl.txt
+H:\0.MyProject\SteamKit\Samples\5.Friends\bin\Debug\lgpl.txt
+H:\0.MyProject\SteamKit\Samples\5.Friends\bin\Debug\license.txt
+H:\0.MyProject\SteamKit\Samples\5.Friends\bin\Debug\Sample5_Friends.exe
+H:\0.MyProject\SteamKit\Samples\5.Friends\bin\Debug\Sample5_Friends.pdb
+H:\0.MyProject\SteamKit\Samples\5.Friends\bin\Debug\SteamKit2.dll
+H:\0.MyProject\SteamKit\Samples\5.Friends\bin\Debug\protobuf-net.dll
+H:\0.MyProject\SteamKit\Samples\5.Friends\bin\Debug\SteamKit2.pdb
+H:\0.MyProject\SteamKit\Samples\5.Friends\bin\Debug\SteamKit2.xml
+H:\0.MyProject\SteamKit\Samples\5.Friends\bin\Debug\protobuf-net.pdb
+H:\0.MyProject\SteamKit\Samples\5.Friends\bin\Debug\protobuf-net.xml
+H:\0.MyProject\SteamKit\Samples\5.Friends\obj\x86\Debug\Sample5_Friends.csprojResolveAssemblyReference.cache
+H:\0.MyProject\SteamKit\Samples\5.Friends\obj\x86\Debug\Sample5_Friends.exe
+H:\0.MyProject\SteamKit\Samples\5.Friends\obj\x86\Debug\Sample5_Friends.pdb
