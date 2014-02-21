@@ -1,0 +1,15 @@
+H:\0.MyProject\SteamKit\Samples\4.DebugLog\bin\Debug\3rd party.txt
+H:\0.MyProject\SteamKit\Samples\4.DebugLog\bin\Debug\changes.txt
+H:\0.MyProject\SteamKit\Samples\4.DebugLog\bin\Debug\gpl.txt
+H:\0.MyProject\SteamKit\Samples\4.DebugLog\bin\Debug\lgpl.txt
+H:\0.MyProject\SteamKit\Samples\4.DebugLog\bin\Debug\license.txt
+H:\0.MyProject\SteamKit\Samples\4.DebugLog\bin\Debug\Sample4_DebugLog.exe
+H:\0.MyProject\SteamKit\Samples\4.DebugLog\bin\Debug\Sample4_DebugLog.pdb
+H:\0.MyProject\SteamKit\Samples\4.DebugLog\bin\Debug\SteamKit2.dll
+H:\0.MyProject\SteamKit\Samples\4.DebugLog\bin\Debug\protobuf-net.dll
+H:\0.MyProject\SteamKit\Samples\4.DebugLog\bin\Debug\SteamKit2.pdb
+H:\0.MyProject\SteamKit\Samples\4.DebugLog\bin\Debug\SteamKit2.xml
+H:\0.MyProject\SteamKit\Samples\4.DebugLog\bin\Debug\protobuf-net.pdb
+H:\0.MyProject\SteamKit\Samples\4.DebugLog\bin\Debug\protobuf-net.xml
+H:\0.MyProject\SteamKit\Samples\4.DebugLog\obj\x86\Debug\Sample4_DebugLog.exe
+H:\0.MyProject\SteamKit\Samples\4.DebugLog\obj\x86\Debug\Sample4_DebugLog.pdb

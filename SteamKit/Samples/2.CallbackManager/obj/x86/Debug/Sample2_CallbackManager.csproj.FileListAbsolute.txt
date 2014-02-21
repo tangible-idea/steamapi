@@ -1,0 +1,16 @@
+H:\0.MyProject\SteamKit\Samples\2.CallbackManager\bin\Debug\3rd party.txt
+H:\0.MyProject\SteamKit\Samples\2.CallbackManager\bin\Debug\changes.txt
+H:\0.MyProject\SteamKit\Samples\2.CallbackManager\bin\Debug\gpl.txt
+H:\0.MyProject\SteamKit\Samples\2.CallbackManager\bin\Debug\lgpl.txt
+H:\0.MyProject\SteamKit\Samples\2.CallbackManager\bin\Debug\license.txt
+H:\0.MyProject\SteamKit\Samples\2.CallbackManager\bin\Debug\Sample2_CallbackManager.exe
+H:\0.MyProject\SteamKit\Samples\2.CallbackManager\bin\Debug\Sample2_CallbackManager.pdb
+H:\0.MyProject\SteamKit\Samples\2.CallbackManager\bin\Debug\SteamKit2.dll
+H:\0.MyProject\SteamKit\Samples\2.CallbackManager\bin\Debug\protobuf-net.dll
+H:\0.MyProject\SteamKit\Samples\2.CallbackManager\bin\Debug\SteamKit2.pdb
+H:\0.MyProject\SteamKit\Samples\2.CallbackManager\bin\Debug\SteamKit2.xml
+H:\0.MyProject\SteamKit\Samples\2.CallbackManager\bin\Debug\protobuf-net.pdb
+H:\0.MyProject\SteamKit\Samples\2.CallbackManager\bin\Debug\protobuf-net.xml
+H:\0.MyProject\SteamKit\Samples\2.CallbackManager\obj\x86\Debug\Sample2_CallbackManager.csprojResolveAssemblyReference.cache
+H:\0.MyProject\SteamKit\Samples\2.CallbackManager\obj\x86\Debug\Sample2_CallbackManager.exe
+H:\0.MyProject\SteamKit\Samples\2.CallbackManager\obj\x86\Debug\Sample2_CallbackManager.pdb

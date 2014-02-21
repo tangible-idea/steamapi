@@ -1,0 +1,16 @@
+H:\0.MyProject\SteamKit\Samples\3.Extending\bin\Debug\3rd party.txt
+H:\0.MyProject\SteamKit\Samples\3.Extending\bin\Debug\changes.txt
+H:\0.MyProject\SteamKit\Samples\3.Extending\bin\Debug\gpl.txt
+H:\0.MyProject\SteamKit\Samples\3.Extending\bin\Debug\lgpl.txt
+H:\0.MyProject\SteamKit\Samples\3.Extending\bin\Debug\license.txt
+H:\0.MyProject\SteamKit\Samples\3.Extending\bin\Debug\Sample3_Extending.exe
+H:\0.MyProject\SteamKit\Samples\3.Extending\bin\Debug\Sample3_Extending.pdb
+H:\0.MyProject\SteamKit\Samples\3.Extending\bin\Debug\protobuf-net.dll
+H:\0.MyProject\SteamKit\Samples\3.Extending\bin\Debug\SteamKit2.dll
+H:\0.MyProject\SteamKit\Samples\3.Extending\bin\Debug\SteamKit2.pdb
+H:\0.MyProject\SteamKit\Samples\3.Extending\bin\Debug\SteamKit2.xml
+H:\0.MyProject\SteamKit\Samples\3.Extending\bin\Debug\protobuf-net.pdb
+H:\0.MyProject\SteamKit\Samples\3.Extending\bin\Debug\protobuf-net.xml
+H:\0.MyProject\SteamKit\Samples\3.Extending\obj\x86\Debug\Sample3_Extending.csprojResolveAssemblyReference.cache
+H:\0.MyProject\SteamKit\Samples\3.Extending\obj\x86\Debug\Sample3_Extending.exe
+H:\0.MyProject\SteamKit\Samples\3.Extending\obj\x86\Debug\Sample3_Extending.pdb

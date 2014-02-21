@@ -1,0 +1,7 @@
+H:\0.MyProject\SteamWebAPI\bin\Debug\SteamAPI.dll
+H:\0.MyProject\SteamWebAPI\bin\Debug\SteamAPI.pdb
+H:\0.MyProject\SteamWebAPI\bin\Debug\Newtonsoft.Json.dll
+H:\0.MyProject\SteamWebAPI\bin\Debug\Newtonsoft.Json.xml
+H:\0.MyProject\SteamWebAPI\obj\Debug\SteamAPI.dll
+H:\0.MyProject\SteamWebAPI\obj\Debug\SteamAPI.pdb
+H:\0.MyProject\SteamWebAPI\obj\Debug\SteamWebAPI.csprojResolveAssemblyReference.cache

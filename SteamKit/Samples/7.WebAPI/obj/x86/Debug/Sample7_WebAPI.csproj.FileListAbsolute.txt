@@ -1,0 +1,16 @@
+H:\0.MyProject\SteamKit\Samples\7.WebAPI\bin\Debug\3rd party.txt
+H:\0.MyProject\SteamKit\Samples\7.WebAPI\bin\Debug\changes.txt
+H:\0.MyProject\SteamKit\Samples\7.WebAPI\bin\Debug\gpl.txt
+H:\0.MyProject\SteamKit\Samples\7.WebAPI\bin\Debug\lgpl.txt
+H:\0.MyProject\SteamKit\Samples\7.WebAPI\bin\Debug\license.txt
+H:\0.MyProject\SteamKit\Samples\7.WebAPI\bin\Debug\Sample7_WebAPI.exe
+H:\0.MyProject\SteamKit\Samples\7.WebAPI\bin\Debug\Sample7_WebAPI.pdb
+H:\0.MyProject\SteamKit\Samples\7.WebAPI\bin\Debug\SteamKit2.dll
+H:\0.MyProject\SteamKit\Samples\7.WebAPI\bin\Debug\protobuf-net.dll
+H:\0.MyProject\SteamKit\Samples\7.WebAPI\bin\Debug\SteamKit2.pdb
+H:\0.MyProject\SteamKit\Samples\7.WebAPI\bin\Debug\SteamKit2.xml
+H:\0.MyProject\SteamKit\Samples\7.WebAPI\bin\Debug\protobuf-net.pdb
+H:\0.MyProject\SteamKit\Samples\7.WebAPI\bin\Debug\protobuf-net.xml
+H:\0.MyProject\SteamKit\Samples\7.WebAPI\obj\x86\Debug\Sample7_WebAPI.csprojResolveAssemblyReference.cache
+H:\0.MyProject\SteamKit\Samples\7.WebAPI\obj\x86\Debug\Sample7_WebAPI.exe
+H:\0.MyProject\SteamKit\Samples\7.WebAPI\obj\x86\Debug\Sample7_WebAPI.pdb

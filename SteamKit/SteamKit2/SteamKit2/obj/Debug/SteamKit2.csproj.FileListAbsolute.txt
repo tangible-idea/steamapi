@@ -1,0 +1,13 @@
+H:\0.MyProject\SteamKit\SteamKit2\SteamKit2\bin\Debug\3rd party.txt
+H:\0.MyProject\SteamKit\SteamKit2\SteamKit2\bin\Debug\changes.txt
+H:\0.MyProject\SteamKit\SteamKit2\SteamKit2\bin\Debug\gpl.txt
+H:\0.MyProject\SteamKit\SteamKit2\SteamKit2\bin\Debug\lgpl.txt
+H:\0.MyProject\SteamKit\SteamKit2\SteamKit2\bin\Debug\license.txt
+H:\0.MyProject\SteamKit\SteamKit2\SteamKit2\bin\Debug\SteamKit2.dll
+H:\0.MyProject\SteamKit\SteamKit2\SteamKit2\bin\Debug\SteamKit2.pdb
+H:\0.MyProject\SteamKit\SteamKit2\SteamKit2\bin\Debug\protobuf-net.dll
+H:\0.MyProject\SteamKit\SteamKit2\SteamKit2\bin\Debug\protobuf-net.pdb
+H:\0.MyProject\SteamKit\SteamKit2\SteamKit2\bin\Debug\protobuf-net.xml
+H:\0.MyProject\SteamKit\SteamKit2\SteamKit2\obj\Debug\SteamKit2.csprojResolveAssemblyReference.cache
+H:\0.MyProject\SteamKit\SteamKit2\SteamKit2\obj\Debug\SteamKit2.dll
+H:\0.MyProject\SteamKit\SteamKit2\SteamKit2\obj\Debug\SteamKit2.pdb
