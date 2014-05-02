@@ -37,8 +37,9 @@ class user
             if($openid->validate())
             {
                 preg_match("/^http:\/\/steamcommunity\.com\/openid\/id\/(7[0-9]{15,25}+)$/", $openid->identity, $matches); // steamID: $matches[1]
-                setcookie('steamID', $matches[1], time()+(60*60*24*7), '/'); // 1 week
-                header('Location: http://softinus.com/steam');
+                setcookie('steamID', $matches[1], time()+(60*60*24*7), '/', ".raimsoft.com"); // 1 week
+                header('Location: http://softinus.com/steam/signup.html');
+                //echo "<script>document.location.replace('http://softinus.com/steam/signup.html')</script>";
                 exit;
             }
             else
@@ -48,7 +49,6 @@ class user
         }
     }
 }
-
 if(isset($_GET['login']))
 {
     $user->signIn();
@@ -56,21 +56,7 @@ if(isset($_GET['login']))
 if (array_key_exists( 'logout', $_POST ))
 {
     setcookie('steamID', '', -1, '/');
-    header('Location: http://softinus.com/steam');
+    header('Location: http://softinus.com/steam/signup.html');
 }
 
-
-if(!$_COOKIE['steamID'])
-{
-    print ('<form action="?login" method="post">
-        <input type="image" src="http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_large_border.png"/>
-        </form>');
-}
-else
-{
-    print('<form method="post"><button title="Logout" name="logout">Logout</button></form>');
-    echo $user->GetPlayerSummaries($_COOKIE['steamID'])->personaname;
-    print('<p>');
-    echo $user->GetPlayerSummaries($_COOKIE['steamID'])->steamid;
-}
 ?>
