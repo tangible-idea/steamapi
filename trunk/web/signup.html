@@ -10,7 +10,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
         <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" type="text/javascript"></script>
 
-        <script src="main.js" type="text/javascript"></script>
+        <script src="signup.js" type="text/javascript"></script>
 
 		<style type="text/css">
             /* Space out content a bit */
@@ -81,15 +81,15 @@
 	    <div class="container">
 	        <div class="header">
 	            <ul class="nav nav-pills pull-right">
-	                <li class="active">
-	                    <a href="index.html">Home</a>
-	                </li>
-	                <li>
-	                    <a href="#">Contact</a>
-	                </li>
-	                <li>
-	                    <a href="#">Login</a>
-	                </li>
+                    <li class="active">
+                        <a href="index.html" id="top1">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" id="top2">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#" id="top3" onclick="onLogInStat()">Login</a>
+                    </li>
 	            </ul><h3 class="text-muted">Sign up</h3>
 	        </div>
 	        <div class="jumbotron">
@@ -123,7 +123,7 @@
                       </div>');
 
                       echo('<p><input type="email" class="form-control" id="inputEmail1" maxlength="50" placeholder="Email"></p>');
-                      echo('<p><input type="password" class="form-control" id="inputPassword1" maxlength="20" placeholder="Password"></p>');
+                      echo('<p><input type="password" class="form-control" id="inputPassword1" maxlength="20" placeholder="Password" onKeypress="hitEnterKey(event)"></p>');
 
                       echo('<p><a herf="#" class="btn btn-success" onclick="onNext()">Next</a></p>');
                     }
