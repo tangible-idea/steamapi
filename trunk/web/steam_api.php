@@ -17,4 +17,18 @@ class steam_api
         $json = json_decode($response);
         return $json->response->players[0];
     }
+
+    public function GetOwnedGames ($steamid)
+    {
+        $response = file_get_contents('http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=' . $this->apikey . '&steamid=' . $steamid);
+        $json = json_decode($response);
+        return $json->response;
+    }
+
+    public function GetFriendList ($steamid)
+    {
+        $response = file_get_contents('http://api.steampowered.com/ISteamUser/GetFriendList/v0001/?key=' . $this->apikey . '&steamid=' . $steamid);
+        $json = json_decode($response);
+        return $json->friendslist;
+    }
 }
