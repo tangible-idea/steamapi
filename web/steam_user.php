@@ -37,9 +37,9 @@ class user
             if($openid->validate())
             {
                 preg_match("/^http:\/\/steamcommunity\.com\/openid\/id\/(7[0-9]{15,25}+)$/", $openid->identity, $matches); // steamID: $matches[1]
-                setcookie('steamID', $matches[1], time()+(60*60*24*7), '/', ".raimsoft.com"); // 1 week
-                header('Location: http://softinus.com/steam/signup.html');
-                //echo "<script>document.location.replace('http://softinus.com/steam/signup.html')</script>";
+                //setcookie('steamID', $matches[1], time()+(60*60*24*7), '/', ".raimsoft.com"); // 1 week
+                setcookie('steamID', $matches[1], 0, '/', ".raimsoft.com"); // instant
+                header('Location: http://raimsoft.com/steam/signup.html');
                 exit;
             }
             else
@@ -53,10 +53,15 @@ if(isset($_GET['login']))
 {
     $user->signIn();
 }
-if (array_key_exists( 'logout', $_POST ))
+if(isset($_GET['logout']))
 {
-    setcookie('steamID', '', -1, '/');
-    header('Location: http://softinus.com/steam/signup.html');
+    setcookie('steamID', '', -1, '/', ".raimsoft.com");
+    header('Location: http://raimsoft.com/steam/signup.html');
 }
+// if (array_key_exists( 'logout', $_POST ))
+// {
+//     setcookie('steamID', '', -1, '/');
+//     header('Location: http://softinus.com/steam/signup.html');
+// }
 
 ?>
