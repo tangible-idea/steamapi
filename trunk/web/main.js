@@ -1,6 +1,12 @@
  //alert("init");
  init();
 
+$(document).ready(function(){
+            $(".my-popup").popover({
+                placement : 'bottom'
+            });
+        });
+
 function init()
 {
 
