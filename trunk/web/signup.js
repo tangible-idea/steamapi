@@ -3,8 +3,9 @@
 window.onload= init();
 
 
+
 function init()
-{
+{                
    Parse.initialize("V9qM2MTpfW6TFeaud1GEh5uIGKmMOa94N8NQDAdb", "9bkxnxKoZQiDl8KR6aKk5C6G5OR9ZQK8IvKwAARE");
     
     $(document).ready(function(){
@@ -108,14 +109,12 @@ function onLogInStat()
     var top3= $("#top3");     
     if(top3.html() == "Login")
     {
-        alert('login');
         var url = "http://raimsoft.com/steam/signin.html";    
         $(location).attr('href',url);
     }
     else
     {
         setCookie("login", 0, -1);  // 쿠키 삭제.
-        alert('logout');
         
         var url = "http://raimsoft.com/steam/";    
         $(location).attr('href',url);

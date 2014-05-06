@@ -36,10 +36,10 @@ function checkLogin()
         
     if(cookie == "true")    // 로그인 되어있으면...
     {
-        dom1.append('<p><a class="btn btn-lg btn-success" data-loading-text="Loading..." href="#">Find friends</a></p>');
+        dom1.append('<p><a class="btn btn-lg btn-success" data-loading-text="Loading..." href="board.html">성향 분석</a></p>');
         dom2.html("Logout");
     }else{
-        dom1.append('<p><a class="btn btn-lg btn-success" data-loading-text="Loading..." href="signup.html">Sign up today</a></p>');
+        dom1.append('<p><a class="btn btn-lg btn-success" data-loading-text="Loading..." href="signup.html">가입하기</a></p>');
         dom2.html("Login");
     }
     // 버튼 누를때 로딩으로 바꾸는 부분 (boostrap)
@@ -59,14 +59,12 @@ function onLogInStat()
     var top3= $("#top3");     
     if(top3.html() == "Login")
     {
-        alert('login');
         var url = "http://raimsoft.com/steam/signin.html";    
         $(location).attr('href',url);
     }
     else
     {
         setCookie("login", 0, -1);  // 쿠키 삭제.
-        alert('logout');
         
         var url = "http://raimsoft.com/steam/";    
         $(location).attr('href',url);
