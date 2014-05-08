@@ -1,11 +1,64 @@
+
+              
+
+window.onload= init();
+//
+function init()
+{
+    //alert("init");
+    Parse.initialize("V9qM2MTpfW6TFeaud1GEh5uIGKmMOa94N8NQDAdb", "9bkxnxKoZQiDl8KR6aKk5C6G5OR9ZQK8IvKwAARE"); 
+}
+
+function checkLogin()
+{
+    // signup 을 띄울 것인지, dashboard로 가는 버튼을 띄울 것인지
+    //var cookie= getCookie("login");
+    var currentUser = Parse.User.current();
+
+    
+    //var dom1= $("div .jumbotron");
+    var dom2= $("#top3");    
+        
+    if(currentUser)    // 로그인 되어있으면...
+    {
+        dom2.html("Logout");
+        UseSteamAPI(currentUser);
+        
+    }else{
+        dom2.html("Login");
+    }    
+}
+
+function UseSteamAPI(user)
+{
+    var steamID= user.get("steam_id");
+    alert(steamID);
+    
+    var obj1= GetOwnedGames(steamID);
+    alert(obj1.game_count);
+}
+
+function onLogInStat()
+{    
+    var top3= $("#top3");     
+    if(top3.html() == "Login")
+    {
+        var url = "http://steamob.com/steam/signin.html";    
+        $(location).attr('href',url);
+    }
+    else
+    {
+        Parse.User.logOut();    // 로그 아웃
+        //setCookie("login", 0, -1);  // 쿠키 삭제.
+        
+        var url = "http://steamob.com/steam/";    
+        $(location).attr('href',url);
+    }
+}
+
+
 $(function ()
 {
-    /**
- * Dark theme for Highcharts JS
- * @author Torstein Honsi
- */
-
-
 Highcharts.theme = {
    colors: ["#2b908f", "#90ee7e", "#f45b5b", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee",
       "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
@@ -240,30 +293,24 @@ Highcharts.setOptions(Highcharts.theme);
                     allowPointSelect: true,
                     cursor: 'pointer',
                     dataLabels: {
-                        enabled: true,
-                        format: '<b>{point.name}</b>: {point.percentage:.1f} %',
-                        style: {
-                            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                        },
-                        connectorColor: 'silver'
-                    }
+                        enabled: false
+                    },
+                    showInLegend: true
                 }
             },
             series: [{
                 type: 'pie',
                 name: 'genre list',
                 data: [
-                    ['Firefox',   45.0],
-                    ['IE',       26.8],
+                    ['데이터1',   45.0],
+                    ['데이터2',       26.8],
                     {
-                        name: 'Chrome',
-                        y: 12.8,
-                        sliced: true,
-                        selected: true
+                        name: '데이터3',
+                        y: 12.8
                     },
-                    ['Safari',    8.5],
-                    ['Opera',     6.2],
-                    ['Others',   0.7]
+                    ['데이터4',    8.5],
+                    ['데이터5',     6.2],
+                    ['데이터6',   0.7]
                 ]
             }]
 //            series: [{

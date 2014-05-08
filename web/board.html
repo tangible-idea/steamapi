@@ -9,7 +9,11 @@
         
         <script src="http://code.highcharts.com/highcharts.js"></script>
         <script src="http://code.highcharts.com/modules/exporting.js"></script>
+        
+        <script src="//www.parsecdn.com/js/parse-1.2.18.min.js"></script>
+        
         <script src="board.js"></script>
+        
         
         <style type="text/css">
             /* Space out content a bit */
@@ -90,11 +94,12 @@
                     </li>
                     <li>
                         <a href="#" id="top3" onclick="onLogInStat()">Login</a>
+                        <script>checkLogin();</script>
                     </li>
                 </ul><h3 class="text-muted">Steam Sync</h3>
             </div>
             
-            <div id="container" style="min-width: 310px; height:400px; max-width:600px; margin: 0 auto">           </div>
+            <div id="container" style="min-width: 310px; height:400px; max-width:730px; margin: 0 auto">           </div>
             
             <div class="footer">
                 <p>&copy; Softinus 2014</p>

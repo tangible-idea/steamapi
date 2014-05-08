@@ -78,18 +78,19 @@ function hitEnterKey(e)
 
 function checkLogin()
 {
-    // signup 을 띄울 것인지, dashboard로 가는 버튼을 띄울 것인지
-    var cookie= getCookie("login");
+        // signup 을 띄울 것인지, dashboard로 가는 버튼을 띄울 것인지
+    //var cookie= getCookie("login");
+    var currentUser = Parse.User.current();
         
     var dom1= $("div .jumbotron");
     var dom2= $("#top3");    
         
-    if(cookie == "true")    // 로그인 되어있으면...
+    if(currentUser)    // 로그인 되어있으면...
     {
-        dom1.append('<p><a class="btn btn-lg btn-success" data-loading-text="Loading..." href="#">Find friends</a></p>');
+        dom1.append('<p><a class="btn btn-lg btn-success" data-loading-text="Loading..." href="board.html">성향 분석</a></p>');
         dom2.html("Logout");
     }else{
-        dom1.append('<p><a class="btn btn-lg btn-success" data-loading-text="Loading..." href="signup.html">Sign up today</a></p>');
+        dom1.append('<p><a class="btn btn-lg btn-success" data-loading-text="Loading..." href="signup.html">가입하기</a></p>');
         dom2.html("Login");
     }
     // 버튼 누를때 로딩으로 바꾸는 부분 (boostrap)
@@ -109,14 +110,15 @@ function onLogInStat()
     var top3= $("#top3");     
     if(top3.html() == "Login")
     {
-        var url = "http://raimsoft.com/steam/signin.html";    
+        var url = "http://steamob.com/steam/signin.html";    
         $(location).attr('href',url);
     }
     else
     {
-        setCookie("login", 0, -1);  // 쿠키 삭제.
+        Parse.User.logOut();    // 로그 아웃
+        //setCookie("login", 0, -1);  // 쿠키 삭제.
         
-        var url = "http://raimsoft.com/steam/";    
+        var url = "http://steamob.com/steam/";    
         $(location).attr('href',url);
     }
 }
@@ -169,7 +171,7 @@ function onNext()
            success: function(user) {
               // Hooray! Let them use the app now.
               setCookie("login", true, 1);
-              alert("가입 완료!");
+              alert("가입이 완료되었습니다.\n이메일 인증을 완료하시면 추후 비밀번호를 찾을 때 도움이 됩니다.");
 
               var url = "http://raimsoft.com/steam/";    
               $(location).attr('href',url);

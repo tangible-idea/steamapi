@@ -3,7 +3,7 @@ error_reporting(E_ERROR | E_PARSE | E_WARNING);
 
 $user = new user;
 $user->apikey = "DE028A2732887BCDB1CCE803B9A1A24D"; // put your API key here
-$user->domain = "raimsoft.com"; // put your domain
+$user->domain = "steamob.com"; // put your domain
 
 
 class user
@@ -37,9 +37,9 @@ class user
             if($openid->validate())
             {
                 preg_match("/^http:\/\/steamcommunity\.com\/openid\/id\/(7[0-9]{15,25}+)$/", $openid->identity, $matches); // steamID: $matches[1]
-                //setcookie('steamID', $matches[1], time()+(60*60*24*7), '/', ".raimsoft.com"); // 1 week
-                setcookie('steamID', $matches[1], 0, '/', ".raimsoft.com"); // instant
-                header('Location: http://raimsoft.com/steam/signup.html');
+                //setcookie('steamID', $matches[1], time()+(60*60*24*7), '/', ".steamob.com"); // 1 week
+                setcookie('steamID', $matches[1], 0, '/', ".steamob.com"); // instant
+                header('Location: http://steamob.com/steam/signup.html');
                 exit;
             }
             else
@@ -55,8 +55,8 @@ if(isset($_GET['login']))
 }
 if(isset($_GET['logout']))
 {
-    setcookie('steamID', '', -1, '/', ".raimsoft.com");
-    header('Location: http://raimsoft.com/steam/signup.html');
+    setcookie('steamID', '', -1, '/', ".steamob.com");
+    header('Location: http://steamob.com/steam/signup.html');
 }
 // if (array_key_exists( 'logout', $_POST ))
 // {

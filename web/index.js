@@ -1,4 +1,10 @@
-//init();
+window.onload= init();
+
+function init()
+{
+        //alert("init");
+   Parse.initialize("V9qM2MTpfW6TFeaud1GEh5uIGKmMOa94N8NQDAdb", "9bkxnxKoZQiDl8KR6aKk5C6G5OR9ZQK8IvKwAARE");        
+}
 
 // 쿠키 생성
  function setCookie(cName, cValue, cDay)
@@ -29,12 +35,13 @@
 function checkLogin()
 {
     // signup 을 띄울 것인지, dashboard로 가는 버튼을 띄울 것인지
-    var cookie= getCookie("login");
+    //var cookie= getCookie("login");
+    var currentUser = Parse.User.current();
         
     var dom1= $("div .jumbotron");
     var dom2= $("#top3");    
         
-    if(cookie == "true")    // 로그인 되어있으면...
+    if(currentUser)    // 로그인 되어있으면...
     {
         dom1.append('<p><a class="btn btn-lg btn-success" data-loading-text="Loading..." href="board.html">성향 분석</a></p>');
         dom2.html("Logout");
@@ -59,36 +66,17 @@ function onLogInStat()
     var top3= $("#top3");     
     if(top3.html() == "Login")
     {
-        var url = "http://raimsoft.com/steam/signin.html";    
+        var url = "http://steamob.com/steam/signin.html";    
         $(location).attr('href',url);
     }
     else
     {
-        setCookie("login", 0, -1);  // 쿠키 삭제.
+        Parse.User.logOut();    // 로그 아웃
+        //setCookie("login", 0, -1);  // 쿠키 삭제.
         
-        var url = "http://raimsoft.com/steam/";    
+        var url = "http://steamob.com/steam/";    
         $(location).attr('href',url);
     }
 }
 
 
-function init()
-{
-    //alert("init()");
-    //$("#custom1").append('test');
-    //var c= $("div .jumbotron");
-    //alert(c.html());
-    //c.empty();
-    //content.append('<p>test</p>');
-    //content.append("<p><a class=\"btn btn-lg btn-success\" data-loading-text=\"Loading...\" href=\"signup.html\">Sign up today</a></p>");
-    
-//    $('a[data-loading-text]')
-//    .click(function () {
-//        var btn = $(this)
-//        btn.button('loading')
-//        setTimeout(function () {
-//            btn.button('reset')
-//        }, 30000)
-//    });
-        
-}
