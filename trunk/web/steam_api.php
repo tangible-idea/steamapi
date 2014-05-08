@@ -3,7 +3,7 @@ error_reporting(E_ERROR | E_PARSE | E_WARNING);
 
 $steam_api = new steam_api;
 $steam_api->apikey = "DE028A2732887BCDB1CCE803B9A1A24D"; // put your API key here
-$steam_api->domain = "raimsoft.com"; // put your domain
+$steam_api->domain = "steamob.com"; // put your domain
 
 
 class steam_api

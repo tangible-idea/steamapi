@@ -92,9 +92,10 @@ function onLogin()
 
     // 로그인 시도 (parse back end server)
     Parse.User.logIn(email, pw, {
-      success: function(user) {
-          setCookie("login", true, 1);
-          var url = "http://raimsoft.com/steam/";    
+      success: function(user)
+        {            
+          //setCookie("login", true, 1);
+          var url = "http://steamob.com/steam/";    
           $(location).attr('href',url);
       },
       error: function(user, error) {
