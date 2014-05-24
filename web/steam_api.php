@@ -20,6 +20,7 @@ class steam_api
 
     public function GetOwnedGames ($steamid)
     {
+        //http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=DE028A2732887BCDB1CCE803B9A1A24D&steamid=76561198013979478
         $response = file_get_contents('http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=' . $this->apikey . '&steamid=' . $steamid);
         $json = json_decode($response);
         return $json->response;

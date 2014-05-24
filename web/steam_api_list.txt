@@ -1,0 +1,5 @@
+http://steamcommunity.com/profiles/76561198031419263/games?tab=all&xml=1
+
+http://api.steampowered.com/ISteamApps/GetAppList/v0001/
+
+http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=DE028A2732887BCDB1CCE803B9A1A24D&steamid=76561198013979478
