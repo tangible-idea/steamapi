@@ -14,7 +14,7 @@ function init()
             });
         });
     
-    checkLogin();
+    //checkLogin();
 }
 
 function getNumberOnly(val)

@@ -9,6 +9,7 @@ function init()
     Parse.initialize("V9qM2MTpfW6TFeaud1GEh5uIGKmMOa94N8NQDAdb", "9bkxnxKoZQiDl8KR6aKk5C6G5OR9ZQK8IvKwAARE"); 
 }
 
+
 function checkLogin()
 {
     // signup 을 띄울 것인지, dashboard로 가는 버튼을 띄울 것인지
@@ -22,10 +23,14 @@ function checkLogin()
     if(currentUser)    // 로그인 되어있으면...
     {
         dom2.html("Logout");
-        UseSteamAPI(currentUser);
+        //UseSteamAPI(currentUser);
         
     }else{
-        dom2.html("Login");
+        alert("잘못된 접근입니다~ :)");
+        history.go(-1);
+        //var url = "http://steamob.com/steam/signin.html";    
+        //$(location).attr('href',url);
+        //dom2.html("Login");
     }    
 }
 
@@ -34,8 +39,6 @@ function UseSteamAPI(user)
     var steamID= user.get("steam_id");
     alert(steamID);
     
-    var obj1= GetOwnedGames(steamID);
-    alert(obj1.game_count);
 }
 
 function onLogInStat()
