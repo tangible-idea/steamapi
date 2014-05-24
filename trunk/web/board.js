@@ -3,10 +3,85 @@
 
 window.onload= init();
 //
+var data;
+var arrInfo;
+
+
+var Action= 0;
+var Adventrue= 0;
+var Casual= 0;
+var Indie= 0;
+var Platformer= 0;
+var Racing= 0;
+var RPG= 0;
+var Strategy= 0;
+var Sports= 0;
+var Simulation= 0;
+
+
 function init()
 {
     //alert("init");
     Parse.initialize("V9qM2MTpfW6TFeaud1GEh5uIGKmMOa94N8NQDAdb", "9bkxnxKoZQiDl8KR6aKk5C6G5OR9ZQK8IvKwAARE"); 
+        
+    $(document).ready(function()
+    {
+        
+        
+        
+    });
+}
+
+function test()
+{
+    data= $("#my_genre_list");
+    arrInfo= data.text().split(',');
+
+    for(var i=0; i<arrInfo.length; i++)
+    {
+        if(arrInfo[i] == "Action")
+        {
+            Action += 1;
+        }
+        else if(arrInfo[i] == "Adventrue")
+        {
+            Adventrue += 1;
+        }
+        else if(arrInfo[i] == "Casual")
+        {
+            Casual += 1;
+        }
+        else if(arrInfo[i] == "Indie")
+        {
+            Indie += 1;
+        }
+        else if(arrInfo[i] == "Platformer")
+        {
+            Platformer += 1;
+        }
+        else if(arrInfo[i] == "Racing")
+        {
+            Racing += 1;
+        }
+        else if(arrInfo[i] == "RPG")
+        {
+            RPG += 1;
+        }
+        else if(arrInfo[i] == "Strategy")
+        {
+            Strategy += 1;
+        }
+        else if(arrInfo[i] == "Sports")
+        {
+            Sports += 1;
+        }
+        else if(arrInfo[i] == "Simulation")
+        {
+            Simulation += 1;
+        }
+    }
+    
+    data.hide();
 }
 
 
@@ -62,6 +137,8 @@ function onLogInStat()
 
 $(function ()
 {
+    test();
+    
 Highcharts.theme = {
    colors: ["#2b908f", "#90ee7e", "#f45b5b", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee",
       "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
@@ -305,15 +382,61 @@ Highcharts.setOptions(Highcharts.theme);
                 type: 'pie',
                 name: 'genre list',
                 data: [
-                    ['데이터1',   45.0],
-                    ['데이터2',       26.8],
+                    
+                    ['액션',   Action],
+                    ['어드벤처',       Adventrue],
                     {
-                        name: '데이터3',
-                        y: 12.8
+                        name: '캐주얼',
+                        y: Casual
                     },
-                    ['데이터4',    8.5],
-                    ['데이터5',     6.2],
-                    ['데이터6',   0.7]
+                    ['인디',    Indie],
+                    ['플랫포머',     Platformer],
+                    ['레이싱',   Racing],
+                    ['롤플레잉',   RPG],
+                    ['전략',   Strategy],
+                    ['스포츠',   Sports],
+                    ['시뮬레이션',   Simulation]
+                    
+                    
+//                    ['Action',   Action],
+//                    ['Adventrue',       Adventrue],
+//                    {
+//                        name: 'Casual',
+//                        y: Casual
+//                    },
+//                    ['Indie',    Indie],
+//                    ['Platformer',     Platformer],
+//                    ['Racing',   Racing],
+//                    ['RPG',   RPG],
+//                    ['Strategy',   Strategy],
+//                    ['Sports',   Sports],
+//                    ['Simulation',   Simulation]
+                    
+//                    ['Action',   10.0],
+//                    ['Adventrue',       10.0],
+//                    {
+//                        name: 'Casual',
+//                        y: 10.0
+//                    },
+//                    ['Indie',    10.0],
+//                    ['Platformer',     10.0],
+//                    ['Racing',   10.0],
+//                    ['RPG',   10.0],
+//                    ['Strategy',   10.0],
+//                    ['Sports',   10.0],
+//                    ['Simulation',   10.0]
+                    
+
+                    
+//                    ['데이터1',   45.0],
+//                    ['데이터2',       26.8],
+//                    {
+//                        name: '데이터3',
+//                        y: 12.8
+//                    },
+//                    ['데이터4',    8.5],
+//                    ['데이터5',     6.2],
+//                    ['데이터6',   0.7]
                 ]
             }]
 //            series: [{

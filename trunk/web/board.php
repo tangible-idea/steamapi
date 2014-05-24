@@ -2,8 +2,8 @@
 
 include("steam_api.php");
 
-$map_id= array();
-$map_genre= array();
+//$map_id= array();
+//$map_genre= array();
 $map_all= array();
 
 //function findGenre($match_id)
@@ -53,13 +53,15 @@ else
     $Owned= $steam_api->GetOwnedGames($steamID);
 
     echo('<p>' .$Owned->game_count .'</p>');
+    
+    echo('<span id="my_genre_list">');
     for($i= 0; $i < $Owned->game_count; $i++)
     {
         //echo('<p>game_id: ' .$Owned->games[$i]->appid .'</p>');
-        //echo( findGenre($Owned->games[$i]->appid) );
-        echo( $map_all[$Owned->games[$i]->appid] );
-        
+        //echo( findGenre($Owned->games[$i]->appid) );        
+        echo($map_all[$Owned->games[$i]->appid] .',');
     }
+    echo('</span>');
 
 }
 
