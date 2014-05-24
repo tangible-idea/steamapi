@@ -72,7 +72,7 @@ function onLogInStat()
     else
     {
         Parse.User.logOut();    // 로그 아웃
-        //setCookie("login", 0, -1);  // 쿠키 삭제.
+        setCookie("login", 0, -1);  // 쿠키 삭제.
         
         var url = "http://steamob.com/steam/";    
         $(location).attr('href',url);

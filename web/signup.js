@@ -116,7 +116,7 @@ function onLogInStat()
     else
     {
         Parse.User.logOut();    // 로그 아웃
-        //setCookie("login", 0, -1);  // 쿠키 삭제.
+        setCookie("login", 0, -1);  // 쿠키 삭제.
         
         var url = "http://steamob.com/steam/";    
         $(location).attr('href',url);
@@ -164,16 +164,13 @@ function onNext()
         user.set("steam_id", getNumberOnly(inputSteamID.text()) );
         user.set("steam_game_count", getNumberOnly(inputCount.text()) );
 
-         // other fields can be set just like with Parse.Object
-         //user.set("phone", "650-555-0000");
-
          user.signUp(null, {
            success: function(user) {
               // Hooray! Let them use the app now.
               setCookie("login", true, 1);
               alert("가입이 완료되었습니다.\n이메일 인증을 완료하시면 추후 비밀번호를 찾을 때 도움이 됩니다.");
 
-              var url = "http://raimsoft.com/steam/";    
+              var url = "http://steamob.com/steam/";    
               $(location).attr('href',url);
            },
            error: function(user, error) {
