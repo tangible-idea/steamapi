@@ -26,7 +26,7 @@ ob_end_clean();
     print('</br>인증키 : ');
     echo('<label class="control-label" id="steamID">' .$steam_id .'</label>');
 
-    if($nOwnedGameCount > 50)
+    if($nOwnedGameCount > 10)
     {
       echo('<div class="form-group has-success has-feedback">
       <label class="control-label" for="inputSuccess2" id="gameCount">'.'소유 게임 개수 : ' .$nOwnedGameCount .'개</label>

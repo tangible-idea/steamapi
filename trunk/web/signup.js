@@ -110,7 +110,7 @@ function onLogInStat()
     var top3= $("#top3");     
     if(top3.html() == "Login")
     {
-        var url = "http://steamob.com/steam/signin.html";    
+        var url = "http://steamob.com/signin.html";    
         $(location).attr('href',url);
     }
     else
@@ -118,7 +118,7 @@ function onLogInStat()
         Parse.User.logOut();    // 로그 아웃
         setCookie("login", 0, -1);  // 쿠키 삭제.
         
-        var url = "http://steamob.com/steam/";    
+        var url = "http://steamob.com/";    
         $(location).attr('href',url);
     }
 }
@@ -170,7 +170,7 @@ function onNext()
               setCookie("login", true, 1);
               alert("가입이 완료되었습니다.\n이메일 인증을 완료하시면 추후 비밀번호를 찾을 때 도움이 됩니다.");
 
-              var url = "http://steamob.com/steam/";    
+              var url = "http://steamob.com/";    
               $(location).attr('href',url);
            },
            error: function(user, error) {
