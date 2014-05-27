@@ -121,7 +121,7 @@ function onLogInStat()
     var top3= $("#top3");     
     if(top3.html() == "Login")
     {
-        var url = "http://steamob.com/steam/signin.html";    
+        var url = "http://steamob.com/signin.html";    
         $(location).attr('href',url);
     }
     else
@@ -129,7 +129,7 @@ function onLogInStat()
         Parse.User.logOut();    // 로그 아웃
         //setCookie("login", 0, -1);  // 쿠키 삭제.
         
-        var url = "http://steamob.com/steam/";    
+        var url = "http://steamob.com/";    
         $(location).attr('href',url);
     }
 }

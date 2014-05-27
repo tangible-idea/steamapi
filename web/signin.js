@@ -97,7 +97,7 @@ function onLogin()
           var sID= user.get("steam_id");
           setCookie("login", true, 1);
           setCookie("steamID", sID, 1);
-          var url = "http://steamob.com/steam/";    
+          var url = "http://steamob.com/";    
           $(location).attr('href',url);
       },
       error: function(user, error) {
